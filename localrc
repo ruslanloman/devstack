@@ -1,0 +1,26 @@
+ADMIN_PASSWORD=r00tme
+MYSQL_PASSWORD=r00tme
+RABBIT_PASSWORD=r00tme
+SERVICE_PASSWORD=r00tme
+SERVICE_TOKEN=r00tme
+DEST=/opt/stack
+LOGFILE=/opt/stack/data/stack.log
+SCREEN_LOGDIR=/opt/stack/data/log
+RECLONE=yes
+Q_PLUGIN=ml2
+#FLAT_INTERFACE=eth1
+FIXED_RANGE=10.0.0.0/24
+FIXED_NETWORK_SIZE=256
+ENABLE_TENANT_VLANS=True
+TENANT_VLAN_RANGE=1000:1999
+PHYSICAL_NETWORK=physnet1
+OVS_PHYSICAL_BRIDGE=br-eth1
+disable_service n-net
+ENABLED_SERVICES=g-api,g-reg,key,n-api,n-crt,n-obj,n-cpu,n-cond,cinder,c-sch,c-api,c-vol,n-sch,n-novnc,n-xvnc,n-cauth,horizon,rabbit,mysql,q-meta,neutron,q-agt,q-dhcp,q-l3,q-svc,manila,m-api,m-shr,m-sch
+RECLONE=yes
+HOST_IP=127.0.0.1
+MYSQL_HOST=$HOST_IP
+RABBIT_HOST=$HOST_IP
+Q_HOST=$HOST_IP
+VOLUME_GROUP="cinder-volume"
+VOLUME_NAME_PREFIX="volume-"
